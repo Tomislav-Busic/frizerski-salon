@@ -444,7 +444,7 @@
 }
 
 .main__img--card img {
-    width: 300px;
+    width: 400px;
     height: 650px;
     margin: 40px auto 0;
 }
@@ -481,7 +481,7 @@
     }
 
     .main__img--card img {
-        width: 280px;
+        width: 350px;
         height: 450px;
         margin: 40px auto 0;
     }
@@ -518,7 +518,7 @@
     }
 
     .main__img--card img {
-        width: 150px;
+        width: 220px;
         height: 250px;
         margin: 20px auto 0;
     }
