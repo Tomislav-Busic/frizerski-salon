@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frizerski salon TAJANA</title>
     <link rel = "icon" href ="./assets/img/logo.png" type ="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
@@ -45,8 +46,31 @@
         <div class="home__container">
             <h1 class="home__heading">Frizerski salon  <span class="color">TAJANA</span></h1>
             <img id="rot" class="home__icon" src="./assets/img/slika.png" alt="škare">
-            <p class="home__description">Neograničene mogućnosti</p>
+            <p class="home__description" data-aos="fade-right"
+                                         data-aos-anchor="#example-anchor"
+                                         data-aos-offset="500"
+                                         data-aos-duration="2500">Neograničene mogućnosti</p>
             <button class="main__btn"><a href="#contact">Kontakt</a></button>
+            <div class="social__icons" data-aos="fade-left"
+                                       data-aos-anchor="#example-anchor"
+                                       data-aos-offset="500"
+                                       data-aos-duration="2500">
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -54,10 +78,10 @@
     <div class="main" id="about">
         <h1>O NAMA</h1>
         <div class="main__container">
-            <div class="main__img--container">
+            <div class="main__img--container" data-aos="fade-down-right">
                 <div class="main__img--card"><img src="./assets/img/frizura.png" alt="O nama"></img></div>
             </div>
-            <div class="main__content">
+            <div class="main__content" data-aos="fade-left">
                 <h2>Izaberite najbolje za sebe i njegu svoje kose</h2>
                 <p>Dobra frizura može biti Vaša ulaznica u svijet uspjeha, kako privatno tako i poslovno. 
                     Ona otkriva sve Vaše adute, prikriva nedostatke, a samim time utječe na bolje raspoloženje i samopouzdanje.</p>
@@ -70,53 +94,121 @@
     <div class="services" id="services">
         <h1>NAŠE USLUGE</h1>
         <div class="services__wrapper">
-            <div class="services__card">
+            <div class="services__card" data-aos="fade-right">
                 <div class="left">
                     <img src="./assets/img/frizura.png" alt="frizura">
                     <h2>SVEČANE FRIZURE</h2>
                 </div>
                 <div class="right">
                     <div class="distortion">
-                        <img src="./assets/img/test1.jpeg" alt="FRIZURE">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
                     </div>
                     <p>Ekstenzije</p>
                     <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
                 </div>
             </div>
-            <div class="services__card">
+            <div class="services__card" data-aos="fade-left">
                 <div class="left">
                     <img src="./assets/img/nokti.png" alt="nokti">
                     <h2>UMJETNI NOKTI</h2>
                 </div>
                 <div class="right">
                     <div class="distortion">
-                        <img src="./assets/img/test3.jpg" alt="Ekstenzije">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
                     </div>
                     <p>Lakiranje</p>
                     <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
                 </div>
             </div>
-            <div class="services__card">
+            <div class="services__card" data-aos="fade-right">
                 <div class="left">
                     <img src="./assets/img/feniranje.png" alt="feniranje">
                     <h2>FENIRANJE KOSE</h2>
                 </div>
                 <div class="right">
                     <div class="distortion">
-                        <img src="./assets/img/test2.jpeg" alt="FENIRANJE KOSE">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
                     </div>
                     <p>Keratinski tretman</p>
                     <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
                 </div>
             </div>
-            <div class="services__card">
+            <div class="services__card" data-aos="fade-left">
                 <div class="left">
                     <img src="./assets/img/kistovi.png" alt="kistovi">
                     <h2>MAKE UP</h2>
                 </div>
                 <div class="right">
                     <div class="distortion">
-                        <img src="./assets/img/test4.jpeg" alt="FENIRANJE">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
+                    </div>
+                    <p>Oblikovanje obrva</p>
+                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
+                </div>
+            </div>
+            <div class="services__card" data-aos="fade-right">
+                <div class="left">
+                    <img src="./assets/img/frizura3.png" alt="frizura">
+                    <h2>SVEČANE FRIZURE</h2>
+                </div>
+                <div class="right">
+                    <div class="distortion">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
+                    </div>
+                    <p>Ekstenzije</p>
+                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
+                </div>
+            </div>
+            <div class="services__card" data-aos="fade-left">
+                <div class="left">
+                    <img src="./assets/img/nokti2.png" alt="nokti">
+                    <h2>UMJETNI NOKTI</h2>
+                </div>
+                <div class="right">
+                    <div class="distortion">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
+                    </div>
+                    <p>Lakiranje</p>
+                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
+                </div>
+            </div>
+            <div class="services__card" data-aos="fade-right">
+                <div class="left">
+                    <img src="./assets/img/feniranje2.png" alt="feniranje">
+                    <h2>FENIRANJE KOSE</h2>
+                </div>
+                <div class="right">
+                    <div class="distortion">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
+                    </div>
+                    <p>Keratinski tretman</p>
+                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
+                </div>
+            </div>
+            <div class="services__card" data-aos="fade-left">
+                <div class="left">
+                    <img src="./assets/img/kistovi2.png" alt="kistovi">
+                    <h2>MAKE UP</h2>
+                </div>
+                <div class="right">
+                    <div class="distortion">
+                        <div class="image">
+                            <div class="imageone"></div>
+                        </div>
                     </div>
                     <p>Oblikovanje obrva</p>
                     <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
@@ -127,14 +219,14 @@
 
     <!--Features Section-->
     <div class="main" id="sign-up">
-        <h1>Pridruži se našem timu</h1>
+        <h1>Karijera</h1>
         <div class="main__container">
-            <div class="main__content">
-                <h2>Prijavi se još danas</h2>
-                <p>Šišanje je tvoja strast? <br>Javi se čekamo te!</p>
+            <div class="main__content" data-aos="fade-down">
+                <h2>Pridruži se našem timu</h2>
+                <p>Šišanje je tvoja strast? <br> Pridruži se našem timu.<br>Javi se čekamo te!</p>
                 <button class="main__btn"><a href="#contact">Kontakt</a></button>
             </div>
-            <div class="main__img--container">
+            <div class="main__img--container" data-aos="zoom-in-up">
                 <div class="main__img--card" id="card-2"><img src="./assets/img/frizura2.png" alt="kontakt"></div>
             </div>   
         </div>
@@ -142,8 +234,9 @@
 
     <!--Footer Section-->
     <div class="footer__container" id="contact">
+        <h1 data-aos="flip-down">Kontakt</h1>
         <div class="footer__links">
-            <div class="footer__link--wrapper">
+            <div class="footer__link--wrapper" data-aos="fade-right">
                 <div class="footer__link--items">
                     <h2>O nama</h2>
                     <a href="/sign-up">Kako radimo</a>
@@ -158,7 +251,7 @@
                     <a href="/sign-up">Make up</a>
                 </div>
             </div>
-            <div class="footer__link--wrapper">  
+            <div class="footer__link--wrapper" data-aos="fade-left">  
                 <div class="footer__link--items">
                     <h2>Društvene mreže</h2>
                     <a href="/">Instagram</a>
@@ -172,10 +265,10 @@
                 </div>
             </div>
         </div>
-        <div class="map">
-            <iframe class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=17.6466178894043%2C45.13582762413877%2C17.70326614379883%2C45.16252278230774&amp;layer=mapnik&amp;marker=45.14917676606088%2C17.674942016601562" style="border: 5px solid #9518fc"></iframe>
+        <div class="map" data-aos="zoom-in-down">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2780.094505383227!2d16.07777606552223!3d45.829390179106916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shr!4v1622894484180!5m2!1sen!2shr" style="border: 5px solid #9518fc" loading="lazy"></iframe>
         </div>
-        <div class="section social__media">
+        <div class="section social__media" data-aos="zoom-in">
             <div class="social__media--wrap">
                 <div class="footer__logo">
                     <a href="/" id="footer__logo"> TAJANA</a>
@@ -201,6 +294,16 @@
             </div>
         </div>
     </div>
+
+     <!--aos cdn link-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <!--initializing aos-->
+     <script>
+         AOS.init({
+             delay:400,
+             duration: 1300
+         })
+     </script>
     
     <script src="./assets/app.js"></script>
 </body>
