@@ -367,16 +367,16 @@ body{
     }
 
     .home__description {
-        margin-top: 1.5rem;
+        margin-top: 1.3rem;
         font-size: 40px;
     }
 
     .home__container .main__btn{
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .home__container .social__icons{
-        margin-top: 1.5rem;
+        margin-top: 1.3rem;
         width: 300px;
     }
 
