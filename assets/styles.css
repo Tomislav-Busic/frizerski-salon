@@ -367,16 +367,16 @@ body{
 
 .main h1 {
     font-size: 4.5rem;
-    background: #bdc5ce;
+    background: #fff;
     background: -webkit-linear-gradient(
-        -225deg,
-        #bdc5ce 60%,
-        #313335
+        -190deg,
+        #fff 40%,
+        #3f3f3f
     );
     background: linear-gradient(
-        -225deg,
-        #bdc5ce 60%,
-        #313335
+        -190deg,
+        #fffe 40%,
+        #3f3f3f
     );
     background-size: 100%;
     -webkit-background-clip: text;
