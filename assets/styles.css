@@ -10,10 +10,12 @@
 
 html{
     overflow-x: hidden;
+    background: linear-gradient(to right, #161616, #000000);
 }
 
 body{
     overflow-x: hidden;
+    background: linear-gradient(to right, #161616, #000000);
 }
 
 /*NAVBAR*/
@@ -44,7 +46,7 @@ body{
 
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -54,6 +56,7 @@ body{
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 700;
     font-size: 2rem;
 }
 
@@ -109,10 +112,13 @@ body{
 
 @keyframes animate{
     0%{
-        filter: hue-rotate(0deg);
+        filter: hue-rotate(270deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
     }
     100%{
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(270deg);
     }
 }
 
@@ -242,43 +248,25 @@ body{
 }
 
 .home__heading .color {
-    background: #ee0979;
-    background: -webkit-linear-gradient(
-        to right,
-        #ff6a00,
-        #ee0970
-    );
-    background: linear-gradient(
-        to right,
-        #ff6a00,
-        #ee0970
-    );
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transpatent;
+    -moz-text-fill-color: transparent;
 }
 
 .home__description {
     margin-top: 2rem;
     font-size: 60px;
-    background: #da22ff;
-    background: -webkit-linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
-    );
-    background: linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
-    );
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transpatent;
+    -moz-text-fill-color: transparent;
     font-family: 'Righteous', cursive;
 }
 
@@ -287,17 +275,9 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%; 
-    background: #da22ff;
-    background: -webkit-linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
-    );
-    background: linear-gradient(
-        to right,
-        #8b07ff,
-        #de3aff
-    );
+    background: #ff8177;
+    background: -webkit-linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
+    background: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transpatent;
@@ -328,32 +308,23 @@ body{
 
 .home__container .social__icons .social__icon--link{
     font-size: 40px;
-    background: #da22ff;
-    background: -webkit-linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
-    );
-    background: linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
-    );
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transpatent;
+    -moz-text-fill-color: transparent;
     transition: 0.3s ease-out;
 }
 
 .highlight {
-    border-bottom: 6px solid rgb(132, 0, 255);
+    border-bottom: 6px solid rgb(153, 45, 255);
 }
 
 @media screen and (max-width: 768px) {
     .home__icon{
-        margin-top: 1.5;
+        margin-top: 0.5rem;
         width: 100px;
         height: 100px;
     }
@@ -367,7 +338,7 @@ body{
     }
 
     .home__description {
-        margin-top: 1.3rem;
+        margin-top: 0.5rem;
         font-size: 40px;
     }
 
@@ -388,29 +359,30 @@ body{
 /*About section*/
 
 .main {
-    background-color: #131313;
+    background: #da22ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9114ff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10rem 0;
 }
 
 .main h1 {
     font-size: 4.5rem;
-    background: #da22ff;
+    background: #bdc5ce;
     background: -webkit-linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
+        -225deg,
+        #bdc5ce 60%,
+        #313335
     );
     background: linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
+        -225deg,
+        #bdc5ce 60%,
+        #313335
     );
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transpatent;
-    text-transform: uppercase;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -434,17 +406,17 @@ body{
 }
 
 .main__content h2 {
-    font-size: 4rem;
-    background: #ff8177;
+    font-size: 3.5rem;
+    background: #bdc5ce;
     background: -webkit-linear-gradient(
-        to right,
-        #9114ff,
-        #da22ff
+        -325deg,
+        #bdc5ce 60%,
+        #313335
     );
     background: linear-gradient(
-        to right,
-        #8f0eff,
-        #da22ff
+        -325deg,
+        #bdc5ce 60%,
+        #313335
     );
     background-size: 100%;
     -webkit-background-clip: text;
@@ -475,7 +447,8 @@ body{
     position: relative;
     transition: all 0.35s;
     outline: none;
-    animation: animate 5s linear infinite; 
+    animation: animate 5s linear infinite;
+    box-shadow: 0 1.5rem 1.7rem rgba(0,0,0,0.8); 
 }
 
 .main__btn a {
@@ -518,7 +491,19 @@ body{
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background: #e0e7f0;
+    background: -webkit-linear-gradient(
+        -225deg,
+        #e0e7f0 50%,
+        #ee0404
+    );
+    background: linear-gradient(
+        -225deg,
+        #e0e7f0 50%,
+        #ee0404
+    );
+    box-shadow: 0 1.5rem 1.7rem rgba(0,0,0,1);
+    animation: box 15s linear infinite; 
 }
 
 .main__img--card img {
@@ -528,12 +513,32 @@ body{
 }
 
 #card-2 {
-    background: #ff512f;
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background: linear-gradient(to right, #dd2476, #ff512f);
-    animation: animate 15s linear infinite; 
+    background: #e0e7f0;
+    background: -webkit-linear-gradient(
+        -225deg,
+        #e0e7f0 50%,
+        #ee0404
+    );
+    background: linear-gradient(
+        -225deg,
+        #e0e7f0 50%,
+        #ee0404
+    );
+    box-shadow: 0 1.5rem 1.7rem rgba(0,0,0,1);
+    animation: box 15s linear infinite; 
 }
 
+@keyframes box{
+    0%{
+        filter: hue-rotate(260deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(260deg);
+    }
+}
 
 /*Mobile Rsponsive*/
 
@@ -575,7 +580,7 @@ body{
     }
 
     .main__content h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .main__content p {
@@ -665,9 +670,22 @@ body{
     background-image: linear-gradient(-80deg, #00dbde, #fc00ff);
 }
 
-.services__card:nth-child(4),
-.services__card:nth-child(5) {
-    animation: animate 15s linear infinite; 
+
+.services__card:nth-child(5){
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        290deg,
+      #fdeff9,
+      #ec38bc, 
+      #7303c0,
+      #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        290deg,
+      #fdeff9, 
+      #ec38bc, 
+      #7303c0, 
+      #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .services__card:nth-child(2) {
@@ -807,24 +825,24 @@ body{
 
 @keyframes services{
     0%{
-        background-image: url(./img/test1.jpeg);
+        background-image: url(./img/test1.jpg);
     }10%{
-        background-image: url(./img/test1.jpeg);
-        background-image: url(./img/test2.jpeg);
+        background-image: url(./img/test1.jpg);
+        background-image: url(./img/test2.jpg);
     }10.1%{
-        background-image: url(./img/test2.jpeg);
+        background-image: url(./img/test2.jpg);
     }20%{
-        background-image: url(./img/test2.jpeg);
+        background-image: url(./img/test2.jpg);
         background-image: url(./img/test3.jpg);
     }20.01%{
         background-image: url(./img/test3.jpg);
     }30%{
         background-image: url(./img/test3.jpg);
-        background-image: url(./img/test4.jpeg);
+        background-image: url(./img/test4.jpg);
     }30.01%{
-        background-image: url(./img/test4.jpeg);
+        background-image: url(./img/test4.jpg);
     }40%{
-        background-image: url(./img/test4.jpeg);
+        background-image: url(./img/test4.jpg);
         background-image: url(./img/test5.jpg);
     }40.01%{
         background-image: url(./img/test5.jpg);
@@ -840,11 +858,11 @@ body{
         background-image: url(./img/test7.jpg);
     }70%{
         background-image: url(./img/test7.jpg);
-        background-image: url(./img/test8.jpg);
+        background-image: url(./img/test8.png);
     }70.01%{
-        background-image: url(./img/test8.jpg);
+        background-image: url(./img/test8.png);
     }80%{
-        background-image: url(./img/test8.jpg);
+        background-image: url(./img/test8.png);
         background-image: url(./img/test9.jpg);
     }80.01%{
         background-image: url(./img/test9.jpg);
@@ -855,7 +873,7 @@ body{
         background-image: url(./img/test10.jpg);
     }100%{
         background-image: url(./img/test10.jpg);
-        background-image: url(./img/test1.jpeg);
+        background-image: url(./img/test1.jpg);
     }
 }
 
@@ -932,17 +950,20 @@ body{
 .footer__container h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
-    color: white;
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 #footer__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(
-        to right, 
-        #ff0844 0%, 
-        #f7673c 100%);
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1031,7 +1052,13 @@ body{
 }
 
 .social__icon--link {
-    color: #fff;
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-size: 24px;
     transition: 0.3s ease-out;
 }
@@ -1066,6 +1093,16 @@ body{
 .website__rights {
     color: #fff;
     text-align: center;
+}
+
+.website__rights a{
+    background-color: #ff8177;
+    background-image: linear-gradient( -365deg , #00dbde 0%, #fc00ff 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 820px) {
