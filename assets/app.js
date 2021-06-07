@@ -18,6 +18,7 @@ const highlightMenu = () => {
     const aboutMenu = document.querySelector('#about-page');
     const servicesMenu = document.querySelector('#services-page');
     const signUp = document.querySelector('#sign-up-page');
+    const galery = document.querySelector('#sign-galery');
     const contact = document.querySelector('#contact-page');
     let scrollPos = window.scrollY;
     //console.log(scrollPos);
@@ -40,10 +41,15 @@ const highlightMenu = () => {
     } else if (window.innerWidth > 960 && scrollPos < 3800) {
         servicesMenu.classList.remove('highlight');
         signUp.classList.add('highlight');
-        contact.classList.remove('highlight');
+        galery.classList.remove('highlight');
         return;
     } else if (window.innerWidth > 960 && scrollPos < 4700) {
         signUp.classList.remove('highlight');
+        galery.classList.add('highlight');
+        contact.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 960 && scrollPos < 5600) {
+        galery.classList.remove('highlight');
         contact.classList.add('highlight');
         return;
     }  
