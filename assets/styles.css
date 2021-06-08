@@ -589,7 +589,7 @@ body{
 
     .main h1 {
         font-size: 2.5rem;
-        margin: 3rem 0;
+        margin: 0 0 3rem 0;
     }
 
     .main__content h2 {
@@ -922,7 +922,10 @@ body{
 /*GALERIJA*/
 .galerija{
     background: #131313;
-    padding: 10rem 0;
+    padding: 10rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .galerija h1{
@@ -942,80 +945,82 @@ body{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-bottom: 10rem;
     font-size: 4.5rem;
     text-align: center;
 }
 
-.galerija .galery{
+.galerija .swiper-animacija{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20rem;
 }
 
-.galery .box{
+.swiper-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 300px;
+    margin: 3rem 0;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+}
+
+.card img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: galery 30s linear infinite;
+    width: 400px;
+    height: 500px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0009);
 }
 
-@keyframes galery {
-    0%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100%{
-        transform: perspective(1000px) rotateY(360deg);
-    }
-    
-}
 
-.galery .box span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
-}
-
-.galery .box span img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 @media screen and (max-width: 1100px){
     .galerija h1 {
         font-size: 2.5rem;
     }
-    .galerija .galery{
-        margin-bottom: 15rem;
-    }
-    .galery .box{
-        width: 250px;
-        height: 250px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .galerija .galery{
-        margin-bottom: 5rem;
+    .galerija{
+        background: #131313;
+        padding: 6rem 0 0 0;
     }
-    .galery .box{
-        width: 200px;
-        height: 200px;
+
+    .swiper-container {
+        padding-bottom: 200px;
+        margin:  0;
+    }
+
+    .swiper-slide {
+        width: 350px;
+        height: 440px;
+    }
+    
+    .card img{
+        width: 350px;
+        height: 440px;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .swiper-slide {
+        width: 280px;
+        height: 350px;
+    }
+    
+    .card img{
+        width: 280px;
+        height: 350px;
+    }
+}
 
 /*Footer Style*/
 .footer__container {
