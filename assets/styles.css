@@ -571,7 +571,7 @@ body{
 
 @media screen and (max-width: 480px) {
     .main {
-        padding: 5rem 0 2rem 0;
+        padding: 7rem 0 2rem 0;
     }
 
     .main__img--card {
@@ -909,7 +909,7 @@ body{
 
 @media screen and (max-width: 768px) {
     .services {
-        padding-top: 5rem;
+        padding-top: 7rem;
         padding-bottom: 10px;
     }
 
@@ -991,7 +991,7 @@ body{
 @media screen and (max-width: 768px) {
     .galerija{
         background: #131313;
-        padding: 6rem 0 0 0;
+        padding: 7rem 0 0 0;
     }
 
     .swiper-container {
