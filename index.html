@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -33,10 +34,10 @@
                     <a href="#usluge" class="navbar__links" id="services-page">Usluge</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#karijera" class="navbar__links" id="sign-up-page">Karijera</a>
+                    <a href="#galerija" class="navbar__links" id="sign-galery">Galerija</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#galerija" class="navbar__links" id="sign-galery">Galerija</a>
+                    <a href="#karijera" class="navbar__links" id="sign-up-page">Karijera</a>
                 </li>
                 <li class="navbar__btn">
                     <a href="#kontakt" class="button" id="contact-page">Kontakt</a>
@@ -221,18 +222,14 @@
         </div>
     </div>
 
-    <!--Career Section-->
-    <div class="main" id="karijera">
-        <h1>KARIJERA</h1>
-        <div class="main__container">
-            <div class="main__content" data-aos="fade-down">
-                <h2>Pridruži se našem timu</h2>
-                <p>Šišanje je tvoja strast? <br> Pridruži se našem timu.<br>Javi se čekamo te!</p>
-                <button class="main__btn"><a href="#contact">Kontakt</a></button>
-            </div>
-            <div class="main__img--container">
-                <div class="main__img--card" id="card-2"><img src="./assets/img/frizura2.png" alt="kontakt"></div>
-            </div>   
+     <!--Video-->
+    <div class="video" id="video">
+        <div class="banner">
+            <section>
+                <video src="assets/img/videoplayback.mp4" autoplay muted loop>
+                </video>
+                <h2>Frizerski  <span>salon</span> Tajana</h2>
+            </section>
         </div>
     </div>
 
@@ -369,7 +366,21 @@
 
     </div>
 
-
+    <!--Career Section-->
+    <div class="main" id="karijera">
+        <h1>KARIJERA</h1>
+        <div class="main__container">
+            <div class="main__content" data-aos="fade-down">
+                <h2>Pridruži se našem timu</h2>
+                <p>Šišanje je tvoja strast? <br> Pridruži se našem timu.<br>Javi se čekamo te!</p>
+                <button class="main__btn"><a href="#contact">Kontakt</a></button>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2"><img src="./assets/img/frizura2.png" alt="kontakt"></div>
+            </div>   
+        </div>
+    </div>
+    
     <!--Footer Section-->
     <div class="footer__container" id="kontakt">
         <h1 data-aos="flip-down">Kontakt</h1>
@@ -432,6 +443,38 @@
             </div>
         </div>
     </div>
+
+
+    <!--INTRO-->
+    <div class="intro">
+        <div class="intro-text">
+                <div class="hide">
+                    <h2>
+                        <span class="text1">FRIZERSKI</span>
+                    </h2>
+                </div>
+                <div class="hide">
+                    <h2>
+                        <span class="text2">SALON</span>
+                    </h2>
+                </div>
+            <video src="./assets/smoke.mp4" type="video/mp4" muted></video>
+           <h1>
+               <span class="intro-t">T</span>
+               <span class="intro-a">A</span>
+               <span class="intro-j">J </span>
+               <span class="intro-ja">A</span>
+               <span class="intro-n">N</span>
+               <span class="intro-na">A</span>
+           </h1>
+        </div>
+    </div>
+
+    <div class="slider"></div>
+    
+
+
+
 
     <!-- Initialize Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

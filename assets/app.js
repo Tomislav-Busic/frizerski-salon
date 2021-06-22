@@ -1,3 +1,23 @@
+const tl = gsap.timeline({defaults: { ease: "power1.out" } }); //koliko dugo želimo da se svaka animacija dogodi
+
+tl.to(".text1", { y: "0%", duration: 1.4});
+tl.to(".text2", { y: "0%", duration: 1.4});
+tl.to(".intro video", {opacity: 1, play: 1});
+tl.to(".intro-t", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 1});
+tl.to(".intro-a", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
+tl.to(".intro-j", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.1});
+tl.to(".intro-ja", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
+tl.to(".intro-n", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
+tl.to(".intro-na", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 1});
+tl.to(".slider", { y: "-150%", duration: 3, delay: 1});
+tl.to(".intro", { y: "-150%", duration: 1}, "-=1"); 
+
+
+
+
+
+
+
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
@@ -33,23 +53,23 @@ const highlightMenu = () => {
         homeMenu.classList.remove('highlight');
         servicesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 2800) {
+    } else if (window.innerWidth > 960 && scrollPos < 3300) {
         aboutMenu.classList.remove('highlight');
         servicesMenu.classList.add('highlight');
-        signUp.classList.remove('highlight');
-        return;
-    } else if (window.innerWidth > 960 && scrollPos < 3800) {
-        servicesMenu.classList.remove('highlight');
-        signUp.classList.add('highlight');
         galery.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 4700) {
-        signUp.classList.remove('highlight');
+    } else if (window.innerWidth > 960 && scrollPos < 4400) {
+        servicesMenu.classList.remove('highlight');
         galery.classList.add('highlight');
+        signUp.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 960 && scrollPos < 5300) {
+        galery.classList.remove('highlight');
+        signUp.classList.add('highlight');
         contact.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 5600) {
-        galery.classList.remove('highlight');
+    } else if (window.innerWidth > 960 && scrollPos < 6300) {
+        signUp.classList.remove('highlight');
         contact.classList.add('highlight');
         return;
     }  
