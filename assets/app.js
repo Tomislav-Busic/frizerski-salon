@@ -1,16 +1,11 @@
 const tl = gsap.timeline({defaults: { ease: "power1.out" } }); //koliko dugo želimo da se svaka animacija dogodi
 
-tl.to(".text1", { y: "0%", duration: 1.4});
-tl.to(".text2", { y: "0%", duration: 1.4});
-tl.to(".intro video", {opacity: 1, play: 1});
-tl.to(".intro-t", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 1});
-tl.to(".intro-a", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
-tl.to(".intro-j", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.1});
-tl.to(".intro-ja", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
-tl.to(".intro-n", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 0.5});
-tl.to(".intro-na", { rotationY: 0,autoAlpha: 1,ease:Power4.easeInOut, duration: 1});
-tl.to(".slider", { y: "-150%", duration: 3, delay: 1});
+tl.to(".text", { y: "0%", duration: 3, stagger: 1});
+tl.to(".slider", { y: "-150%", duration: 2, delay: 0.5});
 tl.to(".intro", { y: "-150%", duration: 1}, "-=1"); 
+tl.fromTo("nav", { opacity: 0}, { opacity: 1, duration: 1});
+tl.fromTo(".big-text", { opacity: 0}, { opacity: 1, duration: 1});
+
 
 
 
