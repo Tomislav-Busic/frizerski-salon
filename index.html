@@ -11,420 +11,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-barba="wrapper">
 
-    <!--Navbar Section-->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo"><img src="./assets/img/logo.png" alt="logo"> TAJANA</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <main data-barba="container" data-barba-namespace="usluge">
+        <!--Navbar Section-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo"><img src="./assets/img/logo.png" alt="logo"> TAJANA</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#pocetna" class="navbar__links" id="home-page">Početna</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#onama" class="navbar__links" id="about-page">O nama</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#usluge" class="navbar__links" id="services-page">Usluge</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#galerija" class="navbar__links" id="sign-galery">Galerija</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#karijera" class="navbar__links" id="sign-up-page">Karijera</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#kontakt" class="button" id="contact-page">Kontakt</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#pocetna" class="navbar__links" id="home-page">Početna</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#onama" class="navbar__links" id="about-page">O nama</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#usluge" class="navbar__links" id="services-page">Usluge</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#galerija" class="navbar__links" id="sign-galery">Galerija</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#karijera" class="navbar__links" id="sign-up-page">Karijera</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="#kontakt" class="button" id="contact-page">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <!--Home section-->
-    <div class="home" id="pocetna">
-        <div class="home__container">
-            <h1 class="home__heading">Frizerski salon  <span class="color">TAJANA</span></h1>
-            <img id="rot" class="home__icon" src="./assets/img/slika.png" alt="škare">
-            <p class="home__description" data-aos="fade-right"
-                                         data-aos-anchor="#example-anchor"
-                                         data-aos-offset="500"
-                                         data-aos-duration="4500">Neograničene mogućnosti</p>
-            <button class="main__btn"><a href="#contact">Kontakt</a></button>
-            <div class="social__icons" data-aos="fade-left"
-                                       data-aos-anchor="#example-anchor"
-                                       data-aos-offset="500"
-                                       data-aos-duration="4500">
-                <a href="/" class="social__icon--link" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="/" class="social__icon--link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!--About Section-->
-    <div class="main" id="onama">
-        <h1>O NAMA</h1>
-        <div class="main__container">
-            <div class="main__img--container" data-aos="fade-down-right">
-                <div class="main__img--card"><img src="./assets/img/frizura.png" alt="O nama"></img></div>
-            </div>
-            <div class="main__content" data-aos="fade-left">
-                <h2>Izaberite najbolje za sebe i njegu svoje kose</h2>
-                <p>Dobra frizura može biti Vaša ulaznica u svijet uspjeha, kako privatno tako i poslovno. 
-                    Ona otkriva sve Vaše adute, prikriva nedostatke, a samim time utječe na bolje raspoloženje i samopouzdanje.</p>
-                <button class="main__btn"><a href="#">Nazovite odmah i zakažite termin</a></button>
-            </div>
-        </div>
-    </div>
-
-    <!--Services section-->
-    <div class="services" id="usluge">
-        <h1>NAŠE USLUGE</h1>
-        <div class="services__wrapper">
-            <div class="services__card" data-aos="fade-right">
-                <div class="left">
-                    <img src="./assets/img/frizura.png" alt="frizura">
-                    <h2>SVEČANE FRIZURE</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Ekstenzije</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-left">
-                <div class="left">
-                    <img src="./assets/img/nokti.png" alt="nokti">
-                    <h2>UMJETNI NOKTI</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Lakiranje</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-right">
-                <div class="left">
-                    <img src="./assets/img/feniranje.png" alt="feniranje">
-                    <h2>FENIRANJE KOSE</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Keratinski tretman</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-left">
-                <div class="left">
-                    <img src="./assets/img/kistovi.png" alt="kistovi">
-                    <h2>MAKE UP</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Oblikovanje obrva</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-right">
-                <div class="left">
-                    <img src="./assets/img/frizura3.png" alt="frizura">
-                    <h2>SVEČANE FRIZURE</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Ekstenzije</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-left">
-                <div class="left">
-                    <img src="./assets/img/nokti2.png" alt="nokti">
-                    <h2>UMJETNI NOKTI</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Lakiranje</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-right">
-                <div class="left">
-                    <img src="./assets/img/feniranje2.png" alt="feniranje">
-                    <h2>FENIRANJE KOSE</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Keratinski tretman</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-            <div class="services__card" data-aos="fade-left">
-                <div class="left">
-                    <img src="./assets/img/kistovi2.png" alt="kistovi">
-                    <h2>MAKE UP</h2>
-                </div>
-                <div class="right">
-                    <div class="distortion">
-                        <div class="image">
-                            <div class="imageone"></div>
-                        </div>
-                    </div>
-                    <p>Oblikovanje obrva</p>
-                    <div class="services__btn"><button href="#contact">Rezerviraj</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     <!--Video-->
-    <div class="video" id="video">
-        <div class="banner">
-            <section>
-                <video src="assets/img/videoplayback.mp4" autoplay muted loop>
-                </video>
-                <h2>Frizerski  <span>salon</span> Tajana</h2>
-            </section>
-        </div>
-    </div>
-
-    <!--Galery section-->
-    <div class="galerija" id="galerija">
-        <h1>GALERIJA</h1>
-
-        <div class="swiper-animacija">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery1.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery2.jpeg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery3.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery4.jpeg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery5.jpeg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery6.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery7.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery8.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery9.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery10.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery11.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery12.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery13.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery14.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery15.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery16.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery17.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery18.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery19.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery20.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery21.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery22.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery23.jpg" alt="galerija">
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img src="./assets/img/galery24.jpg" alt="galerija">
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!--Career Section-->
-    <div class="main" id="karijera">
-        <h1>KARIJERA</h1>
-        <div class="main__container">
-            <div class="main__content" data-aos="fade-down">
-                <h2>Pridruži se našem timu</h2>
-                <p>Šišanje je tvoja strast? <br> Pridruži se našem timu.<br>Javi se čekamo te!</p>
+        <!--Home section-->
+        <div class="home" id="pocetna">
+            <div class="home__container">
+                <h1 class="home__heading">Frizerski salon  <span class="color">TAJANA</span></h1>
+                <img id="rot" class="home__icon" src="./assets/img/slika.png" alt="škare">
+                <p class="home__description" data-aos="fade-right"
+                                             data-aos-anchor="#example-anchor"
+                                             data-aos-offset="500"
+                                             data-aos-duration="5500">Neograničene mogućnosti</p>
                 <button class="main__btn"><a href="#contact">Kontakt</a></button>
-            </div>
-            <div class="main__img--container">
-                <div class="main__img--card" id="card-2"><img src="./assets/img/frizura2.png" alt="kontakt"></div>
-            </div>   
-        </div>
-    </div>
-    
-    <!--Footer Section-->
-    <div class="footer__container" id="kontakt">
-        <h1 data-aos="flip-down">Kontakt</h1>
-        <div class="footer__links">
-            <div class="footer__link--wrapper" data-aos="fade-right">
-                <div class="footer__link--items">
-                    <h2>O nama</h2>
-                    <a href="/sign-up">Kako radimo</a>
-                    <a href="/sign-up">Usluge</a>
-                    <a href="/sign-up">Karijera</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Rezerviraj</h2>
-                    <a href="/sign-up">Feniranje</a>
-                    <a href="/sign-up">Bojanje</a>
-                    <a href="/sign-up">Nokti</a>
-                    <a href="/sign-up">Make up</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper" data-aos="fade-left">  
-                <div class="footer__link--items">
-                    <h2>Društvene mreže</h2>
-                    <a href="/">Instagram</a>
-                    <a href="/">Facebook</a>
-                    <a href="/">Twitter</a>
-                    <a href="/">Youtube</a>
-                </div>
-                <div class="stolica">
-                    <img id="rot" src="./assets/img/škare.png" alt="škare">
-                    <img src="./assets/img/stolica.png" alt="stolica">
-                </div>
-            </div>
-        </div>
-        <div class="map" data-aos="zoom-in-down">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2780.094505383227!2d16.07777606552223!3d45.829390179106916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shr!4v1622894484180!5m2!1sen!2shr" style="border: 5px solid #9518fc" loading="lazy"></iframe>
-        </div>
-        <div class="section social__media" data-aos="zoom-in">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"> TAJANA</a>
-                </div>
-                <p class="website__rights">© All rights reserved Frizerski salon TAJANA 2021. Design by <br> <a href="http://xn--tomislavbui-vlb28i.com/">Tomislav Bušić</a> </p>
-                <div class="social__icons">
+                <div class="social__icons" data-aos="fade-left"
+                                           data-aos-anchor="#example-anchor"
+                                           data-aos-offset="500"
+                                           data-aos-duration="5500">
                     <a href="/" class="social__icon--link" target="_blank">
                         <i class="fab fa-facebook"></i>
                     </a>
@@ -443,66 +79,434 @@
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!--INTRO-->
-    <div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">FRIZERSKI</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">SALON</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text tajana">TAJANA</span>
-            </h1>
+        <!--About Section-->
+        <div class="main" id="onama">
+            <h1 data-aos="zoom-in-down">O NAMA</h1>
+            <div class="main__container">
+                <div class="main__img--container" data-aos="fade-down-right">
+                    <div class="main__img--card"><img src="./assets/img/frizura.png" alt="O nama"></img></div>
+                </div>
+                <div class="main__content" data-aos="fade-left">
+                    <h2>Izaberite najbolje za sebe i njegu svoje kose</h2>
+                    <p>Dobra frizura može biti Vaša ulaznica u svijet uspjeha, kako privatno tako i poslovno. 
+                        Ona otkriva sve Vaše adute, prikriva nedostatke, a samim time utječe na bolje raspoloženje i samopouzdanje.</p>
+                    <button class="main__btn"><a href="#">Nazovite odmah i zakažite termin</a></button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="slider"></div>
-
-    <div class="slider"></div>
+        
     
+    
+        <!--Services section-->
+        <div class="services" id="usluge">
+            <h1 data-aos="zoom-in-down">NAŠE USLUGE</h1>
+            <div class="services__wrapper">
+                <div class="services__card" data-aos="fade-right">
+                    <div class="left">
+                        <img src="./assets/img/frizura.png" alt="frizura">
+                        <h2>SVEČANE FRIZURE</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test4.jpg" alt="frizure">
+                        </div>
+                        <div class="services__button"> 
+                            <div class="buttonserv black">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-left">   
+                    <div class="left">
+                        <img src="./assets/img/nokti.png" alt="nokti">
+                        <h2>UMJETNI NOKTI</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test9.jpg" alt="">
+                        </div>
+                        <div class="services__button"> 
+                            <div class="buttonserv blackl">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-right">
+                    <div class="left">
+                        <img src="./assets/img/feniranje.png" alt="feniranje">
+                        <h2>FENIRANJE KOSE</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test10.jpg" alt="">
+                        </div>
+                        <div class="services__button"> 
+                            <div class="buttonserv blackh">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-left">
+                    <div class="left">
+                        <img src="./assets/img/kistovi.png" alt="kistovi">
+                        <h2>MAKE UP</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test1.jpg" alt="">
+                        </div>
+                        <div class="services__button"> 
+                            <div class="buttonserv black">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-right">
+                    <div class="left">
+                        <img src="./assets/img/frizura3.png" alt="frizura">
+                        <h2>SVEČANE FRIZURE</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test8.png" alt="frizura">
+                        </div><div class="services__button"> 
+                            <div class="buttonserv">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-left">
+                    <div class="left">
+                        <img src="./assets/img/nokti2.png" alt="nokti">
+                        <h2>UMJETNI NOKTI</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test2.jpg" alt="frizure">
+                        </div><div class="services__button"> 
+                            <div class="buttonserv">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-right">
+                    <div class="left">
+                        <img src="./assets/img/feniranje2.png" alt="feniranje">
+                        <h2>FENIRANJE KOSE</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test7.jpg" alt="frizura">
+                        </div><div class="services__button"> 
+                            <div class="buttonserv">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card" data-aos="fade-left">
+                    <div class="left">
+                        <img src="./assets/img/kistovi2.png" alt="kistovi">
+                        <h2>MAKE UP</h2>
+                    </div>
+                    <div class="right">
+                        <div class="distortion">
+                            <img src="./assets/img/test6.jpg" alt="frizura">
+                        </div><div class="services__button"> 
+                            <div class="buttonserv">
+                                <a href="./detalji.html">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Vidi više...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
 
+         <!--Video-->
+        <div class="video" id="video">
+            <div class="banner">
+                <section>
+                    <video autoplay muted loop>
+                        <source src="assets/videos/videoplayback.mp4">
+                    </video>
+                    <h2>Frizerski  <span>salon</span> Tajana</h2>
+                </section>
+            </div>
+        </div>
+
+        <!--Galery section-->
+        <div class="galerija" id="galerija">
+            <h1 data-aos="zoom-in-down">GALERIJA</h1>
+
+            <div class="swiper-animacija">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery1.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery2.jpeg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery3.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery4.jpeg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery5.jpeg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery6.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery7.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery8.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery9.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery10.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery11.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery12.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery13.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery14.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery15.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery16.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery17.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery18.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery19.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery20.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery21.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery22.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery23.jpg" alt="galerija">
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="card">
+                              <img src="./assets/img/galery24.jpg" alt="galerija">
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Career Section-->
+        <div class="main" id="karijera">
+            <h1 data-aos="zoom-in-down">KARIJERA</h1>
+            <div class="main__container">
+                <div class="main__content" data-aos="fade-down">
+                    <h2>Pridruži se našem timu</h2>
+                    <p>Šišanje je tvoja strast? <br> Pridruži se našem timu.<br>Javi se čekamo te!</p>
+                    <button class="main__btn"><a href="#contact">Kontakt</a></button>
+                </div>
+                <div class="main__img--container" data-aos="zoom-in-up">
+                    <div class="main__img--card" id="card-2"><img src="./assets/img/frizura2.png" alt="kontakt"></div>
+                </div>   
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <div class="footer__container" id="kontakt">
+            <h1 data-aos="flip-down">Kontakt</h1>
+            <div class="footer__links">
+                <div class="footer__link--wrapper" data-aos="fade-right">
+                    <div class="footer__link--items">
+                        <h2>O nama</h2>
+                        <a href="/sign-up">Kako radimo</a>
+                        <a href="/sign-up">Usluge</a>
+                        <a href="/sign-up">Karijera</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Rezerviraj</h2>
+                        <a href="/sign-up">Feniranje</a>
+                        <a href="/sign-up">Bojanje</a>
+                        <a href="/sign-up">Nokti</a>
+                        <a href="/sign-up">Make up</a>
+                    </div>
+                </div>
+                <div class="footer__link--wrapper" data-aos="fade-left">  
+                    <div class="footer__link--items">
+                        <h2>Društvene mreže</h2>
+                        <a href="/">Instagram</a>
+                        <a href="/">Facebook</a>
+                        <a href="/">Twitter</a>
+                        <a href="/">Youtube</a>
+                    </div>
+                    <div class="stolica">
+                        <img id="rot" src="./assets/img/škare.png" alt="škare">
+                        <img src="./assets/img/stolica.png" alt="stolica">
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2780.094505383227!2d16.07777606552223!3d45.829390179106916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shr!4v1622894484180!5m2!1sen!2shr" style="border: 5px solid #9518fc" loading="lazy"></iframe>
+            </div>
+            <div class="section social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"> TAJANA</a>
+                    </div>
+                    <p class="website__rights">© All rights reserved Frizerski salon TAJANA 2021. Design by <br> <a href="http://xn--tomislavbui-vlb28i.com/">Tomislav Bušić</a> </p>
+                    <div class="social__icons">
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>      
 
 
 
     <!-- Initialize Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 70,
-            stretch: 0,
-            depth: 200,
-            modifier: 6,
-            slideShadows: true,
-          },
-          loop: true,
-          autoplay:{
-              delay: 2000,
-              disableOnInteraction: true,
-          }
-        });
-      </script>
-
+   
      <!--aos cdn link-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <!--initializing aos-->
-     <script>
-         AOS.init({
-             delay:400,
-             duration: 1300
-         })
-     </script>
-    
     <script src="./assets/app.js"></script>
 </body>
 </html>

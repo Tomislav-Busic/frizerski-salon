@@ -1,17 +1,7 @@
-const tl = gsap.timeline({defaults: { ease: "power1.out" } }); //koliko dugo želimo da se svaka animacija dogodi
-
-tl.to(".text", { y: "0%", duration: 3, stagger: 1});
-tl.to(".slider", { y: "-150%", duration: 2, delay: 0.5});
-tl.to(".intro", { y: "-150%", duration: 1}, "-=1"); 
-tl.fromTo("nav", { opacity: 0}, { opacity: 1, duration: 1});
-tl.fromTo(".big-text", { opacity: 0}, { opacity: 1, duration: 1});
-
-
-
-
-
-
-
+AOS.init({
+  delay:400,
+  duration: 800
+})
 
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
@@ -91,6 +81,25 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
+
+var swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 70,
+    stretch: 0,
+    depth: 200,
+    modifier: 6,
+    slideShadows: true,
+  },
+  loop: true,
+  autoplay:{
+      delay: 2000,
+      disableOnInteraction: true,
+  }
+});
 
 
 
